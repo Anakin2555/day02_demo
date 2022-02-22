@@ -31,26 +31,31 @@ public class DemoArrayListNames {
         two.add("张天爱");
         two.add("张三");
 
-//
 //        1. 第一个队伍只要名字为3个字的成员姓名；
-//
         Stream<String> streamOne = one.stream().filter(s -> s.length() == 3);
 //        2. 第一个队伍筛选之后只要前3个人；
-//
         Stream<String> streamTwo = streamOne.limit(3);
 //        3. 第二个队伍只要姓张的成员姓名；
         Stream<String> streamThree = two.stream().filter(s -> s.startsWith("张"));
-//
 //        4. 第二个队伍筛选之后不要前2个人；
-//
         Stream<String> streamFour = streamThree.skip(2);
 //        5. 将两个队伍合并为一个队伍；
-//
         Stream<String> streamFive = Stream.concat(streamTwo, streamFour);
 //        6. 根据姓名创建 Person 对象；
-//
         Stream<Person> streamSix = streamFive.map(Person::new);
 //        7. 打印整个队伍的Person对象信息。
         streamSix.forEach(System.out::println);
+
+        //张鲁刚修改、合并分支
+
+
+
+
+        //zyc写的代码
+        //zyc写的代码
+        //zyc写的代码
+        //zyc写的代码
+        //zyc写的代码
+        //zyc写的代码
     }
 }
