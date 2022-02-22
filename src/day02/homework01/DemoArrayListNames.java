@@ -46,9 +46,12 @@ public class DemoArrayListNames {
 //        7. 打印整个队伍的Person对象信息。
         streamSix.forEach(System.out::println);
 
+
         //张鲁刚修改、合并分支
 
 
+
+        //zyc 分支
 
 
         //zyc写的代码
